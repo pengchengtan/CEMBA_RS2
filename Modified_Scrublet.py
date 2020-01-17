@@ -3,6 +3,8 @@
 from scrublet.helper_functions import *
 from sklearn.decomposition import PCA, TruncatedSVD
 import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
 
 class Scrublet():
     def __init__(self, mc, tc, hvg_filter, sim_doublet_ratio=2.0, n_neighbors=None, expected_doublet_rate=0.1, stdev_doublet_rate=0.02):
